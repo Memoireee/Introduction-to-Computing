@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Jua&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="HomePage.html" class="rose-icon-link">
+            <img src="Images/rose-icon.png" alt="Rose" class="rose-icon">
+        </a>
+        <p class="header-text">Introduciton to Computing | 1st Semester, Final Term | Personal Website Project</p>
+    </header>
+
+    <main class="clearfix">
+
+        <section class="box-left">
+            <div class="image-frame">
+                <img src="Images/profile-picture.png" alt="Profile Picture" class="profile-pic">
+                <div class="text-area">
+                    <div class="contact-info">
+                        <center><p> CONTACT ME: </p></center>
+                        <ul>
+                            <li>E-mail: myra.timbang@neu.edu.ph</li>
+                            <li>Contact No./Telegram: 09163917228</li>
+                            <li>FaceBook: Myra Timbang</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="box-right">
+            <h1 class="name"> TIMBANG, Myra B. </h1>
+            <p> Just a girl trying her best at life _(:37 )\_ <br>
+                First year BSIT Student at New Era University, 1BSIT-3 Class Monitor <br> <br>
+                Ang sakit na po ng ulo ko. <br>
+                Yehey bakasyon na owo. <br>
+                Miss ko na siya XD.
+            </p>
+            <div>
+                <button class="req" id="imagePopupButton">Resume</button>
+
+                <div id="imagePopup" class="popup">
+                    <span class="close" id="closeImageButton">&times;</span>
+                    <img src="Images/resume.png" alt="Popup Image" class="popup-image">
+                </div>
+
+                <button class="req" style="margin-left: 10px;"> 
+                    <a href="https://assorted-dungeon-998.notion.site/1BSIT-3-Planner-135bb801af02800ba3d0f10053c53ec0?pvs=4" target="_blank"> 
+                        Portfolio 
+                    </a>
+                </button>
+                
+                <button class="req" style="margin-left: 10px;" id="videoPopupButton"> More about IT </button>
+
+                <div id="videoPopup" class="popup">
+                    <span class="close" id="closeVideoButton">&times;</span>
+                    <div class="popup-content">
+                        <video class="popup-video" controls>
+                            <source src="Images/CIT113-18_AVP_VID2024_Timbang, Myra B. - Made with Clipchamp.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="audio-player">
+                <p id="audio-title"> Listen to a song: Laufey - Valentine </p>
+                <button id="play-button">Play</button>
+                <input type="range" id="volume-slider" min="0" max="100" value="50">
+                <audio id="audio" src="Music/Laufey - Valentine.mp3"></audio>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
